@@ -75,5 +75,16 @@
         "prefix": "bld stencil invert",
         "body": ["@Method() async invert() { this.count = this.count * -1; }"],
         "description": "Output invert function of stencil element"
+    },
+    "bld import react": {
+        "prefix": "bld import react",
+        "body": [
+            "import { applyPolyfills, defineCustomElements } from 'bld-wc-stencil/loader'",
+            "",
+            "applyPolyfills().then( () => {",
+            "  defineCustomElements(window);",
+            " });"
+        ],
+        "description": "Output react import statements"
     }
 }
