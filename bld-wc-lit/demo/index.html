@@ -13,14 +13,14 @@
 
   <script type="module">
     import { html, render } from 'lit';
-    import '../dist/src/bld-wc-lit.js';
+    import '../dist/src/my-awesome-counter.js';
 
     const title = 'Hello owc World!';
     render(
       html`
-        <bld-wc-lit .title=${title}>
+        <my-awesome-counter .title=${title}>
           some light-dom
-        </bld-wc-lit>
+        </my-awesome-counter>
       `,
       document.querySelector('#demo')
     );

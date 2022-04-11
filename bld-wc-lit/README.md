@@ -1,23 +1,36 @@
-# \<bld-wc-lit>
+# \<my-awesome-counter>
 
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
 ## Installation
 
 ```bash
-npm i bld-wc-lit
+npm i my-awesome-counter
 ```
 
 ## Usage
 
 ```html
 <script type="module">
-  import 'bld-wc-lit/bld-wc-lit.js';
+  import 'my-awesome-counter/my-awesome-counter.js';
 </script>
 
-<bld-wc-lit></bld-wc-lit>
+<my-awesome-counter></my-awesome-counter>
 ```
 
+## Linting and formatting
+
+To scan the project for linting and formatting errors, run
+
+```bash
+npm run lint
+```
+
+To automatically fix linting and formatting errors, run
+
+```bash
+npm run format
+```
 
 
 ## Tooling configs

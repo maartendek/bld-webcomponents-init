@@ -1,1 +1,1 @@
-export { BldWcLit } from './BldWcLit.js';
+export { MyAwesomeCounter } from './MyAwesomeCounter.js';

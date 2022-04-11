@@ -1,12 +1,12 @@
 import { html, css, LitElement } from 'lit';
 import { property } from 'lit/decorators.js';
 
-export class BldWcLit extends LitElement {
+export class MyAwesomeCounter extends LitElement {
   static styles = css`
     :host {
       display: block;
       padding: 25px;
-      color: var(--bld-wc-lit-text-color, #000);
+      color: var(--my-awesome-counter-text-color, #000);
     }
   `;
 
