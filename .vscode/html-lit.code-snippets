@@ -27,7 +27,6 @@
     },
     "bld lit html": {
         "prefix": "bld lit html",
-        "scope": "javascript,typescript",
         "body": [
             "<slot name=\"counter-title\"></slot>",
             "<button id=\"decrease\" @click=${this.onDecrease}>-</button>",
@@ -38,7 +37,6 @@
     },
     "bld lit functions": {
         "prefix": "bld lit functions",
-        "scope": "javascript,typescript",
         "body": [
             "onIncrease() { this.count++; }",
             "onDecrease() { --this.count; }"
@@ -53,5 +51,29 @@
             "</my-awesome-counter>"
         ],
         "description": "Output demo html"
+    },
+    "bld stencil html": {
+        "prefix": "bld stencil html",
+        "body": [
+            "<host>",
+            "<slot name=\"counter-title\"></slot>",
+            "<button id=\"decrease\" onClick={this.onDecrease}>-</button>",
+            "<span id=\"count\">{this.count}</span>",
+            "<button id=\"increase\" onClick={this.onIncrease}>+</button></host>"
+        ],
+        "description": "Output html of stencil element"
+    },
+    "bld stencil functions": {
+        "prefix": "bld stencil functions",
+        "body": [
+            "onIncrease = (): void => { ++this.count; }",
+            "onDecrease = () => { --this.count;}"
+        ],
+        "description": "Output functions of stencil element"
+    },
+    "bld stencil invert ": {
+        "prefix": "bld stencil invert",
+        "body": ["@Method() async invert() { this.count = this.count * -1; }"],
+        "description": "Output invert function of stencil element"
     }
 }
