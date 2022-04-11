@@ -1,38 +1,57 @@
 {
-	// Place your bld-webcomponents-init workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
-	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
-	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
-	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
-	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
-	// Placeholders with the same ids are connected.
-	// Example:
-	// "Print to console": {
-	// 	"scope": "javascript,typescript",
-	// 	"prefix": "log",
-	// 	"body": [
-	// 		"console.log('$1');",
-	// 		"$2"
-	// 	],
-	// 	"description": "Log output to console"
-	// }
-	"lit html": {
-		"prefix": "lit html",
-		"scope": "javascript,typescript",
-		"body": [
-			"<slot name=\"counter-title\"></slot>",
-			"<button id=\"decrease\" @click=${this.onDecrease}>-</button>",
-			"<span id=\"count\">${this.count}</span>",
-			"<button id=\"increase\" @click=${this.onIncrease}>+</button>",
-		],
-		"description": "Output html of lit element"
-	},
-	"lit functions": {
-		"prefix": "lit functions",
-		"scope": "javascript,typescript",
-		"body": [
-			"increase() { this.count++; }",
-			"decrease() { --this.count; }",
-		],
-		"description": "Output html of lit element"
-	}
+    // Place your bld-webcomponents-init workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and
+    // description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope
+    // is left empty or omitted, the snippet gets applied to all languages. The prefix is what is
+    // used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders.
+    // Placeholders with the same ids are connected.
+    // Example:
+    // "Print to console": {
+    // 	"scope": "javascript,typescript",
+    // 	"prefix": "log",
+    // 	"body": [
+    // 		"console.log('$1');",
+    // 		"$2"
+    // 	],
+    // 	"description": "Log output to console"
+    // }
+    "bld css": {
+        "prefix": "bld css",
+        "body": [
+            "* {font-size: 200%;  }",
+            "span {width: 4rem; display: inline-block; text-align: center; }",
+            "button {width: 4rem;height: 4rem;border: none;border-radius: 10px;background-color: seagreen;color: white; }",
+            " #decrease { background-color:  red; }"
+        ],
+        "description": "Output element's css"
+    },
+    "bld lit html": {
+        "prefix": "bld lit html",
+        "scope": "javascript,typescript",
+        "body": [
+            "<slot name=\"counter-title\"></slot>",
+            "<button id=\"decrease\" @click=${this.onDecrease}>-</button>",
+            "<span id=\"count\">${this.count}</span>",
+            "<button id=\"increase\" @click=${this.onIncrease}>+</button>"
+        ],
+        "description": "Output html of lit element"
+    },
+    "bld lit functions": {
+        "prefix": "bld lit functions",
+        "scope": "javascript,typescript",
+        "body": [
+            "onIncrease() { this.count++; }",
+            "onDecrease() { --this.count; }"
+        ],
+        "description": "Output functions of lit element"
+    },
+    "bld html demo": {
+        "prefix": "bld html demo",
+        "body": [
+            "<my-awesome-counter>",
+            "<h2 slot=\"counter-title\">test</h2>",
+            "</my-awesome-counter>"
+        ],
+        "description": "Output demo html"
+    }
 }
